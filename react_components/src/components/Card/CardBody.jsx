@@ -1,10 +1,11 @@
 import React from "react";
+import Text from "../Text/Text";
 import "./styles.css";
 
-const CardBody = ({bodyText, style}) => {
+const CardBody = ({bodyItems, style}) => {
     return (
         <div className='card-body' style={style}>
-            {bodyText}
+            {typeof bodyItems === "string" ? bodyItems : bodyItems.map((body) => <Text bodyText={body} />)}
         </div>
     );
 };

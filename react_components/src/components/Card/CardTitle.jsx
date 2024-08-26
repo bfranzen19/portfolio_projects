@@ -1,11 +1,13 @@
 import React from "react";
+import Text from "../Text/Text";
 import "./styles.css";
 
-const CardTitle = ({title, style}) => {
+const CardTitle = ({title, style, subTitle}) => {
     return (
-        <h2 className='card-title' style={style}>
-            {title}
-        </h2>
+        <div className='card-title-wrapper'>
+            <Text bodyText={title} size={30} />
+            <Text bodyText={subTitle} size={20} />
+        </div>
     );
 };
 

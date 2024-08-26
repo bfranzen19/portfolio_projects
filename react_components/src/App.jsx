@@ -12,15 +12,17 @@ function App() {
             {/* <Grid /> */}
             <Card
                 titleText='title!'
-                bodyText='body!'
+                subTitle='stuff!'
+                // bodyItems='things!'
+                bodyItems={["one", "two"]}
                 footerText='footer'
                 imgAltText='alt text'
                 imgSrc={viteLogo}
                 // cardStyle={}
-                // titleStyle={}
+                titleStyle={{textAlign: "left"}}
                 // bodyStyle={}
                 // imgStyle={}
-                // footerStyle={}
+                footerStyle={{backgroundColor: "red"}}
             />
         </>
     );
